@@ -129,7 +129,7 @@ browser.initResizer = function() {
     var cursor = ($.browser.opera) ? 'move' : 'col-resize';
     $('#resizer').css('cursor', cursor);
     $('#resizer').drag('start', function() {
-        $(this).css({opacity:'0.4', filter:'alpha(opacity:40)'});
+        $(this).css({opacity:'0.4', filter:'alpha(opacity=40)'});
         $('#all').css('cursor', cursor);
     });
     $('#resizer').drag(function(e) {
